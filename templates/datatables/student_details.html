@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title> DataTables </title>
+			<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+			<link rel="stylesheet" href="https://cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css">
+	</head>
+	<body>
+		<div>
+			<h3> jQuery DataTable with django </h3>
+		</div>
+		<div>
+			<table id="details">
+			<script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#details').dataTable({
+			        	"pagingType": "full_numbers",
+			        });
+			    });
+			</script>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Gender</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for student in students %}
+					<tr>
+						<td>{{ student.name }}</td>
+						<td>{{ student.age }}</td>
+						<td>{{ student.gender }}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		</div>
+	</body>
+</html>

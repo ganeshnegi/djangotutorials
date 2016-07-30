@@ -1,0 +1,2 @@
+id,structure,upc,parent,title,description,product_class,rating,is_discountable,shipping_methods,weight,brand,product_image1,product_image2,product_image3,product_image4,category1,category2,category3,partner_name,partner_sku,price_excl_tax,cost_price,price_retail,num_in_stock,strike_off_price,low_stock_threshold
+,standalone,101,,UCB Navy Blue Shirt,<b>Terms & Conditions</b><br><br>new t&c.,Shirt,10,TRUE,weight,1,UCB,,,,,Shirts,,,Jaarwis,12345,1500,1500,1500,150,1500,50
